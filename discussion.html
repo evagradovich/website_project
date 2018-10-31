@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discussion</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="#" type="image/x-icon">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+
+<link rel="stylesheet" type="text/css"  href="style.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900|Lato:300,400|Crimson+Text:400,400i,600' rel='stylesheet' type='text/css'>
+<!--<link rel="stylesheet" type="text/css"  href="color-orange.css">-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="single">
+<header id="menutop">
+
+  <!-- Navigation
+    ==========================================-->
+  <nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Data analysis</a> </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <!--/search-cart-block -->
+
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html" class="page-scroll active-on">Home</a></li>
+                  <li ><a href="introduction.html" class="page-scroll">Intro</a>
+
+                  <li><a href="methods.html">Methods</a></li>
+                  <li  ><a href="#" class="page-scroll">Results</a>
+                    <ul class="sub-menu">
+
+
+                      <li ><a href="distributions.html">Fitting distributions</a>
+  <li><a href="new2.html">Investigating by hour</a></li>
+                        <li><a href="survival.html">Survival analysis</a></li>
+                      </ul>
+                        <!--  <li ><a href="#">Deep Menu 1 </a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Sub Deep 1</a></li>
+                              <li><a href="#">Sub Deep 2</a></li>
+                              <li><a href="#">Sub Deep 3</a></li>
+                              <li><a href="#">Sub Deep 4</a></li>
+                            </ul>
+                          </li>    -->
+                  <!--        <li><a href="distributions.html">Pooled sleep bouts</a></li>
+                          <li><a href="by_hour.html">Sleep bouts by hour</a></li>
+                          <li><a href="threshold.html">Tail</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li> -->
+                  <li><a href="discussion.html">Discussion</a></li>
+
+                  <li><a href="references.html">References</a></li>
+                  <li><a href = "attributions.html">Attributions</a></li>
+                </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </nav>
+</header>
+
+<!--blog body-->
+
+<div id="Blog-post">
+
+  <!-- banner Page
+    ==========================================-->
+
+  <header class="entry-header" style="background-image: url(img/IMG_7626.GIF);">
+    <div class="content  wow fadeInUp">
+      <div class="container">
+        <h1>Discussion</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <!--blog posts container-->
+      <div class="col-md-10 col-sm-10 col-md-offset-1">
+        <article class="post">
+          <h2> Findings and implications </h2>
+          <p> In both male and female wild-type flies, the <mark> log-normal distribution</mark> provided the best fit among 4 tested continuous distributions and exponential distribution provided the worst fit (assessed comparing AIC values). This finding was concordant with the result for distributions pooled into 1-hour bins to explore the distributions throughout 24 hours. Upon graphical inspection of the bout distributions, this is a reasonable result. Log-normal, Weibull and power law distributions are all heavy-tailed meaning that the probability of finding longer bouts is higher than for the exponential function. Considering most variation is observed in the tail of the distribution, which becomes more 'heavy' in the dark phase of the day (hours 12-24), it is likely that the non-exponential distributions would be favoured.   </p>
+          <p> From the point of biological interpretation, the fact that the exponentail distribution fits worst thoughout means that there is no 'memory-free' subcomponent in sleep duration. This makes sense, considering that the probability of waking up from sleep is evidently dependent on the duration of the current sleep bout. Log-normal distribution, as mentioned in the <a href="introduction.html" > introduction, </a>  is observed when independent components' interactions create a multiplicative effect. In the context of studying neuronal processes regarding sleep, a possible explanation can be that, there exists a threshold in associated neuronal circuits, which is reached through a multiplicative effect of interacting neurons. Once the threshold is reached, the short inactivity bout is 'propagated' into longer bouts, and the latter would be governed by a process of different nature maintaining long bouts. This idea is supported by the fact that the log-normal distribution model has shown to be a good fit for shorter bouts but does not account well for longer bouts.
+      <!--    <h4> Definition of sleep </h4>
+          <p> Sleep was defined as an episode of inactivity of minimum 10 seconds, challenging the   -->
+
+The regression parametric model revealed that the model heavily underestimates longer bouts, and so cannot be used to account for the entirety of the data. In mice, sleep bout durations have been described to follow spike (characterising short bouts) and slab (characterising longer bouts) distribution, a particular type of mixture model (see <strong>Fig.11</strong>). The study reports that graphical examination of bout durations indicates a large number of very short bouts (spike) in addition to a long right tail (slab) <a class="mylink" href="references.html#ref21" >[21]</a>. Similarly, the data explored in this project consists a large number of very short bouts (10-50s seconds) and longer bouts spread across the 'heavy' tail of the distribution. Due to the nature of the data, no conclusive analysis could be performed on the longer bouts alone due to a lack of data points. Considering the results, 'spike-and-slab' could be a more appropriate model for  modelling sleep bout lengths in <i> Drosophila </i> flies in future but more data will be required to corroborate this.
+
+    <figure>
+            <img src="img/spike.jpg"><img>
+
+
+
+                        <figcaption><strong>Fig.11</strong> An example demonstrating spike-and-slab mixture distribution. Upper image shows a distribution composed of a 'spike' of many shorter bouts and a tail of longer bouts. Second image shows a decomposed distribution into those two components. Figure adapted from a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2970733/" > bout duration study done in mice. <a class="mylink" href="references.html#ref21" >[21]</a></figcaption>
+                      </figure>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h2> Limitations</h2>
+
+<p> The timing of sleep episodes is codetermined by an
+interaction of two neurobiologic processes: <mark>circadian rhythmicity</mark>
+and <mark> sleep homeostasis </mark>. The data used in this experiment comes from wild-type data where the two processes are inherently intertwined. As the process of specific interest is a dynamic homeostatic process which was targeted for investigation with simple functional forms, it would be interesting to look at flies with 'knocked out' circadian rhythm to isolate the homeostatic process from circadian effects. Future work would involve including mutant fruit flies in the data with disabled circadian rhythm. This will allow for investigation of sleep bouts without the intrinsic influence of circadian rhythms. Comparing distributions between mutant and wild-type flies can help reveal the differences in sleep with and without circadian rhythms. </p>
+
+</p>
+
+<p>  A major limiting factor in the analysis was the <mark> lack of data </mark> in the right tail of the distribution. The fit of the distribution is likely to be heavily affected by the fact that there are few longer bouts compared to the shorter ones, giving a seemingly worse fit for longer bouts. Preliminary analysis was done to investigate solely the right tail of the distribution for underlying statistical distribution but there wasn't sufficient data for conclusive distributional analysis. </p>
+
+
+<p>  Distribution analysis in this study only involved mono-exponential fitting for exponential function. Considering that the distribution data is pooled across many individuals and thus the dataset contains a multitude of subject=specific sleep bout distributions, a monoexponential model may not be appropriate, affecting the fit of the model. Further work would include attempting multiexponential fits to the data. However, caution has to be exercised here as multi-exponential distributions may resemble power law by appearing linear on a log-log plot.
+</p>
+
+<p> The nature of exploratory analysis comes with a challenge of <mark>lack of ground truth </mark>. While it is hard to draw conclusions with confidence, particularly considering the conflicting findings in literature, observing a common statistical distribution for male and female flies with behaviour like a lognormal distribution for shorter bouts which does not extend to longer bouts can begin to provide insight into underlying biological processes governing sleep and sleep duration. </p>
+ </article>
+		<br>
+        <div class="clearfix"></div>
+      </div>
+      <!--blog posts container-->
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!-- Footer
+    ==========================================-->
+
+    <footer class="bottom-footer">
+      <div class="container">
+        <div class="row">
+
+          <!--site details-->
+          <div class="col-md-3 col-sm-12 col-xs-12 site-identity">
+
+            <ul class="socio">
+
+              <li><a href="https://github.com/evagradovich/data_analysis_project2"><i class="fa fa-github"></i></a></li>
+
+            </ul>
+          </div>
+          <!--/site details-->
+
+
+
+
+
+
+          <!--/contact details-->
+          <div class="col-md-12"><p class="copyright"> EVA GRADOVICH 2018 | CID:00929853 | IMPERIAL COLLEGE LONDON</p></div>
+        </div>
+      </div>
+    </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Custom Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>

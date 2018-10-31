@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methods</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<style type="text/css">
+.centerImage
+{
+text-align:center;
+display:block;
+}
+</style>
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="#" type="image/x-icon">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- Stylesheet
+    ================================================== -->
+
+<link rel="stylesheet" type="text/css"  href="style.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900|Lato:300,400|Crimson+Text:400,400i,600' rel='stylesheet' type='text/css'>
+<!--<link rel="stylesheet" type="text/css"  href="color-orange.css">-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="page">
+
+  <div id="preloader">
+    <div id="status">
+    <p></p></div>
+  </div>
+
+
+
+<header id="menutop">
+
+  <!-- Navigation
+    ==========================================-->
+  <nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+
+
+    <!--/Header top-->
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Data analysis</a> </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!--/search-cart-block -->
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html" class="page-scroll active-on">Home</a></li>
+                  <li ><a href="introduction.html" class="page-scroll">Intro</a>
+
+                  <li><a href="methods.html">Methods</a></li>
+                  <li  ><a href="distributions.html">Results</a>
+                    <ul class="sub-menu">
+
+
+                      <li ><a href="distributions.html">Fitting distributions</a>
+                       <li><a href="new2.html">Investigating by hour</a></li>
+                        <li><a href="survival.html">Survival analysis</a></li>
+                      </ul>
+                        <!--  <li ><a href="#">Deep Menu 1 </a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Sub Deep 1</a></li>
+                              <li><a href="#">Sub Deep 2</a></li>
+                              <li><a href="#">Sub Deep 3</a></li>
+                              <li><a href="#">Sub Deep 4</a></li>
+                            </ul>
+                          </li>    -->
+                  <!--        <li><a href="distributions.html">Pooled sleep bouts</a></li>
+                          <li><a href="by_hour.html">Sleep bouts by hour</a></li>
+                          <li><a href="threshold.html">Tail</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li> -->
+                  <li><a href="discussion.html">Discussion</a></li>
+
+                  <li><a href="references.html">References</a></li>
+                  <li><a href = "attributions.html">Attributions</a></li>
+                </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </nav>
+</header>
+
+<!-- banner Page
+    ==========================================-->
+
+<div id="page-banner" style="background-image: url(img/IMG_7626.GIF);">
+  <div class="content wow fadeInUp" >
+    <div class="container">
+      <h1> Methods</h1>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <!--article-->
+        <article class="col-md-12 wow fadeInUp">
+
+
+
+
+<section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<dl>
+					<dd><a href="#0" data-date="01/01/2001" class="selected">Data generation</a></dd>
+					<dd><a href="#0" data-date="10/08/2004">Data pre-processing</a></dd>
+
+
+					<dd><a href="#0" data-date="25/07/2010">Distribution fitting</a></dd>
+
+
+					<dd><a href="#0" data-date="20/10/2015">Survival analysis</a></dd>
+
+				</dl>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+
+		<dl class="cd-timeline-navigation" style=list-type:none>
+			<dd><a href="#0" class="prev inactive">Prev</a></dd>
+			<dd><a href="#0" class="next">Next</a></dd>
+		</dl> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+    <div class="col-sm-12 single-post">
+		<ol>
+			<li class="selected" data-date="01/01/2001">
+				<h2>Experimental data</h2>
+        <br>
+
+        <br>
+				<div ><p>
+
+Flies were raised under a 12 hour light:12 hour dark (LD) regimen at 25 °C on standard polenta and yeast media. <i>Canton S</i> wild-type flies from Ralf Stanewsky (University of Münster) were employed for all experiments. All analysed animals were <dfn data-info="Not experienced social interaction prior to experiment.">socially naive</dfn>, unless otherwise stated.
+
+For all experiments, 7-8 days old <dfn data-info="Insects undergoing transformation between immature and mature stages.">pupae</dfn>  were sorted into glass tubes (70x5x3 mm (length x external diameter x internal diameter, respectively) containing<dfn data-info="In this context refers to a mixture of yeast and polenta.">regular food</dfn>. When animals were 2-3 days old, tubes were loaded into "sleep arenas" and set up in <dfn data-info="New platforms for high-throughput behavioural analysis of fruit flies, developed in Giorgio Gilestro's lab - please hover over image below to find out more">ethoscopes</dfn> <a class="mylink" href="references.html#ref25" >[25]</a> (20 animals per device) (see <strong> Fig.3</strong>). In all cases, three days of baseline were recorded before any treatment. All experiments were carried out under <dfn data-info="Light/Dark">LD</dfn> condition, 50-70% humidity, in incubators set at 25 °C. Animals always had <dfn data-info="As much as an individual wishes, without limit">ad libitum </dfn> access to regular food.	</p>
+      </div>
+        <br>
+        <br>
+        <br>
+     <div class="hvrbox" id="banner" >
+
+<figure>
+     <img style=float:right; src="img/ethoscope.jpg" alt="Ethoscope"  class="hvrbox-layer_bottom">
+        <div class="hvrbox-layer_top" style="float:right;">
+            <div class = "hvrbox-text" style="float: right;text-align:center;">This is an example of an ethoscope, machine for high-throughput analysis of behaviour in Drosophila. Inspired by the traditionally used Drosophila Activity Monitors (DAMs), these novel self-contained machines can be 3D-printed in house and detect/record the activity in flies using computerised video-tracking. Ethoscopes have been developed in Giorgio Gilestro's lab as a novel way of performing
+
+
+            reproducible and highly scalable activity analysis.</div>
+        </div>
+      </div>
+      <figcaption style= "float: right;position: relative; right:45%;"><strong>Fig.3 </strong> Image of an ethoscope platform for activity tracking of fruit flies.</figcaption>
+    </figure>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a style= "float: right;
+          position: relative;
+          right: 46%;font-size:15px;"  href="#" class="btn btn-secondry btn-info">Back to top </a>
+
+
+        <br>
+
+			</li>
+
+<br>
+
+			<li data-date="10/08/2004">
+				<h2>Data pre-processing</h2>
+        <br>
+
+
+        <em> Data handling </em>
+
+        <br>
+
+				<p>
+					Prior to analysis, autogenerated raw ethoscope data was obtained and pre-processed prior to analysis. Animals that died during experiments were excluded from the data. Individuals with missing data (e.g. the animals that went outside the <dfn data-info="Region detectable by laser beams which detect activity of a fly. A fly can occasionally leave the region of interest, typically going to far ends of the glass tube.">region of interest</dfn>) were also excluded. As individual distributions are considered in further analysis, individuals with missing data were removed as deemed incomplete. The dataset contained data from flies in which sleep deprivation was studied. As the focus was solely on native sleep behaviour, these were filtered from the data.
+         All data was handled using <code>behavr</code> package in R from <code>rethomics</code> <a class="mylink" href="references.html#ref26" >[26]</a> .
+
+				</p>
+
+
+        <p> In the context of sleep, hour of day in this analysis is defined in terms of the light/dark phase. Therefore the time is expressed relative to <mark>ZT0 (Zeitgeber) </mark> (i.e.the hour of the day when the light phase starts, equivalent to the onset of the experiment). In Giorgio Gilestro's lab the time is expressed relative to 09:00:00 GMT. Thus L (light) phase is between ZT0 and ZT12 and D (dark) phase is between ZT12 and ZT24. </p>
+        <br>
+        <em> Generating bouts from data </em>
+        <br>
+        <p>The activity of fruit flies is tracked in a way that a status (activity/inactivity) of a fly is recorded every 10 seconds throughout the duration of the experiment. Data was processed to generate bouts which are defined as time intervals of consistent inactivity until the transition into a bout of wakefulness, accurate to the nearest 10 seconds (see <strong>Fig.4</strong>). For subsequent hourly distribution analysis the sleep bouts were then binned into 1-hour epochs, depending on the hour in which the bout started. This was done to resolve the problem of sleep bouts spanning across the breaking point between two hours. The resultant data used is <dfn data-info="Meaning all known values of covariate are observed, exact times for all items are known, this is relevant for further survival-based analysis. ">non-censored</dfn></p>
+  <br><br>      <table>
+       <figure>
+       <thead>
+       <tr>
+       <th scope="col">ID</th>
+       <th scope="col">t</th>
+       <th scope="col">relative position</th>
+       <th scope="col">max_velocity</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="t (s)">10</td>
+       <td data-label="relative position">0.441071429</td>
+       <td data-label="max_velocity">34.1097664</td>
+       </tr>
+       <tr>
+       <td scope="row" data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="t (s)">20</td>
+       <td data-label="relative position">0.835714286</td>
+       <td data-label="max_velocity">17.2933346</td>
+       </tr>
+       <tr>
+       <td scope="row" data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="t (s)">30</td>
+       <td data-label="relative position">0.587500000</td>
+       <td data-label="max_velocity">33.4871930</td>
+       </tr>
+       <tr>
+       <td scope="row" data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="t (s)">40</td>
+       <td data-label="relative position">0.242857143</td>
+       <td data-label="max_velocity">31.6868265</td>
+       </tr>
+       </tbody>
+       </table>
+        <br>
+        <br>
+
+        <img src="img/methods_arrow.png" class="centerImage" alt="Arrow" style="width:40px;height:50px;margin: auto">
+       <br>
+
+       <img src="img/hypno.png" class="centerImage" alt="Arrow" style="width:500px;height:500px;">
+       <br>
+
+       <img src="img/methods_arrow.png" class="centerImage" alt="Arrow" style="width:40px;height:50px;margin: auto">
+       <br>
+
+       <table>
+
+       <thead>
+       <tr>
+       <th scope="col">ID</th>
+       <th scope="col">moving</th>
+       <th scope="col">duration (s)</th>
+       <th scope="col">t_day (s)</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+       <td data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="moving">FALSE</td>
+       <td data-label="duration (s)">10</td>
+       <td data-label="t_day (s)">10</td>
+       </tr>
+       <tr>
+       <td scope="row" data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="moving">TRUE</td>
+       <td data-label="duration (s)">210</td>
+       <td data-label="t_day (s)">20</td>
+       </tr>
+       <tr>
+       <td scope="row" data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="moving">FALSE</td>
+       <td data-label="duration (s)">160</td>
+       <td data-label="t_day (s)">230</td>
+       </tr>
+       <tr>
+       <td scope="row" data-label="ID">2017-04-04_17-38-06_019aee|10</td>
+       <td data-label="moving">TRUE</td>
+       <td data-label="duration (s)">10</td>
+       <td data-label="t_day (s)">390</td>
+       </tr>
+       </tbody>
+       </table>
+       <br>
+       <figcaption><strong>Fig.4 </strong> Summary of convertion process of raw data into discrete bouts. First image shows the raw data obtained, where velocity and position are obtained in 10 second intervals. Second image illustrates how the sleep and wake bouts are defined by consecutive minutes of being in the same state (status = 1 defined as being awake, status = 0 as being asleep). Third table shows the resultant data after bout duration calculations.
+       </figcaption>
+       <figure>
+        <br>
+<br><br><br>
+<div style="float: left;margin: 4px 10px 0px 0px;">
+  <figure>
+        <embed  width=500 height=500 src="pie.html">
+          <a type="button"  href="pie.html" target="_blank" >
+
+        			        </a>
+                      <figcaption><strong>Fig.5</strong> Ratios of bouts of varying lengths in the data. </figcaption>
+                    </figure>
+                  </div>
+
+     <p> Another point of consideration regarding the data was the minimal amount of time that can define a sleep bout. Both 5 minute <a class="mylink" href="references.html#ref27" >[27]</a> and 30-min epochs <a class="mylink" href="references.html#ref28" >[28]</a> have been reported in the fly.  The data indicate that sleep time would be dramatically underestimated if one fails to consider those bouts that are not conveniently expressed in intervals of 30 min. This problem becomes particularly acute in flies that do not have consolidated rest–activity periods . Traditionally sleep bouts are defined in the field as a period of inactivity lasting longer than 5 minutes <a class="mylink" href="references.html#ref27" >[27]</a>. This creates censoring in the sense that true sleep bouts less than 5 minutes are not detected as sleep. As shown in <strong> Fig.5 </strong>, Drosophila flies experience sleep fragmentation, having short bouts and longer bouts of inactivity. Limiting the data to only including inactivity bouts longer than 5 minutes would eliminate 91.2% of bouts.  For distributional analysis, all data was kept for investigative purposes and every bout of inactivity was included in the analysis as a prospective sleep bout. </p>
+
+<p> Due to known difference in sleeping patterns of female and male flies, sleep bouts in females and males are analysed <mark>separately</mark> in all subsequent analysis.</p>
+
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<a style= "float: right;
+    position: relative;
+    right: 46%;font-size:15px;"  href="#" class="btn btn-secondry btn-info">Back to top </a>
+
+    <br>
+    <br>
+<br>
+<br>
+
+
+			</li>
+
+
+			<li id="surv" data-date="25/07/2010">
+				<h2>Fitting distributions</h2>
+<br><br>
+        <p>
+           4 continuous distributions of varied simple functional forms were fit to sleep bout duration data: <mark>Pareto</mark> (pertaining to power-law function), <mark>Weibull </mark>, <mark>log-normal</mark> and <mark>exponential</mark>. Distributions were initially fit without reference to time (i.e. the data was pooled over 24 hours for each individual). The analysis was then repeated with respect to time, fitting distributions to bout data within each of 24 hourly bins. For each distribution considered, <mark>maximum likelihood estimates</mark> were obtained for the parameters of each distribution using <dfn data-info="Broyden-Fletcher-Goldfarb-Shanno algorithm">BFGS</dfn> algorithm.
+           The number of parameters for the different distribution models vary: two for the power law, lognormal and Weibull, and one for exponential distribution.  Akaike information criterion (AIC) have been calculated to compare the models by taking both the model fitness and the model complexity into account. To compare the fit of the distributions, the <mark>Akaike Information Criterion (AIC)</mark> was calculated as <strong>AIC = 2p - 2ln(L)</strong>, where <strong>p</strong> is the number of parameters of the distribution and <strong> L </strong> is the maximised value of the likelihood function (p=1 for the exponential model, k=2 for Weibull, pareto and log-normal models). Smallest AIC values were taken to be indicative of the best comparative fit and thus the distribution with the minimum AIC value was deemed as the best fit. The fit of the selected distribution was further evaluated with probability plots. Parametric fitting analysis was also performed in <mark> R </mark>.
+
+        </p>
+
+
+        <br>
+        <br>
+  <!--    <img src="img/survival.jpg" class="centerImage" alt="surv_formula" style="width:355px;height:130px;">    -->
+        <br>
+        <br>
+
+
+
+            <br>
+            <br>
+            <br>
+<br>
+<br>
+			</li>
+
+
+			<li id="prob" data-date="20/10/2015">
+				<h2>Survival-based analysis</h2>
+        <br>
+
+
+        <p>
+          In the context of survival analysis, a bout was defined as a series of consecutive 10-second epochs of the same state, lasting until the beginning of a bout of another state (sleep defined at status = 0). Bout durations (in seconds) were subjected to Kaplan-Meier survival curve analysis to estimate initial survival distributions.
+
+           Initially, the analysis was performed without reference to time-dependent factors (i.e. the data was pooled over 24 hours for each animal). A statistical distribution that provided the best fit in distributional analysis was fit to the survival curves by linear regression techniques.Survival analysis was performed in R environment using <code> survival </code> package.
+
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <a style= "float: right;
+            position: relative;
+            right: 46%;font-size:15px;"  href="distributions.html" class="btn btn-secondry btn-info">Next - Results</a>
+            <br>
+            <br>
+
+          <br>
+          <br>
+          <br>
+
+			</li>
+<br>
+<br>
+
+
+
+
+</ol>
+	</div> <!-- .events-content -->
+</section>
+<br>
+
+
+
+
+
+
+        <!--portfolio page nav-->
+
+      </div>
+      <!--blog posts container-->
+
+      <!--aside-->
+
+      <!--aside-->
+
+
+<br>
+<br>
+<br>
+<!-- Frooter
+    ==========================================-->
+
+    <footer class="bottom-footer">
+      <div class="container">
+        <div class="row">
+
+          <!--site details-->
+          <div class="col-md-3 col-sm-12 col-xs-12 site-identity">
+
+            <ul class="socio">
+
+              <li><a href="https://github.com/evagradovich/data_analysis_project2"><i class="fa fa-github"></i></a></li>
+
+            </ul>
+          </div>
+          <!--/site details-->
+
+
+
+
+
+
+          <!--/contact details-->
+          <div class="col-md-12"><p class="copyright"> EVA GRADOVICH 2018 | CID:00929853 | IMPERIAL COLLEGE LONDON</p></div>
+        </div>
+      </div>
+    </footer>
+
+      <!--/site details-->
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/modernizr.js"></script>
+<!-- Custom Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>

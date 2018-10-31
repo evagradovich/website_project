@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<!-- Basic Page Needs
+    ================================================== -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results - Survival analysis</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="#" type="image/x-icon">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+
+<link rel="stylesheet" type="text/css"  href="style.css">
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Montserrat:100,200,300,300i,400,500,600,700,800,900|Lato:300,400|Crimson+Text:400,400i,600' rel='stylesheet' type='text/css'>
+<!--<link rel="stylesheet" type="text/css"  href="color-orange.css">-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="single">
+
+
+  <div id="preloader">
+    <div id="status">
+    <p></p></div>
+  </div>
+
+<header id="menutop">
+
+  <!-- Navigation
+    ==========================================-->
+  <nav id="top-menu" class="navbar navbar-default navbar-fixed-top">
+
+
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html">Results</a> </div>
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html" class="page-scroll active-on">Home</a></li>
+                  <li ><a href="introduction.html" class="page-scroll">Intro</a>
+
+                  <li><a href="methods.html">Methods</a></li>
+                  <li  ><a href="#" class="page-scroll">Results</a>
+                    <ul class="sub-menu">
+
+
+                      <li ><a href="distributions.html">Fitting distributions</a>
+  <li><a href="new2.html">Investigating by hour</a></li>
+                        <li><a href="survival.html">Survival analysis</a></li>
+                      </ul>
+                        <!--  <li ><a href="#">Deep Menu 1 </a>
+                            <ul class="sub-menu">
+                              <li><a href="#">Sub Deep 1</a></li>
+                              <li><a href="#">Sub Deep 2</a></li>
+                              <li><a href="#">Sub Deep 3</a></li>
+                              <li><a href="#">Sub Deep 4</a></li>
+                            </ul>
+                          </li>    -->
+                  <!--        <li><a href="distributions.html">Pooled sleep bouts</a></li>
+                          <li><a href="by_hour.html">Sleep bouts by hour</a></li>
+                          <li><a href="threshold.html">Tail</a></li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li> -->
+                  <li><a href="discussion.html">Discussion</a></li>
+
+                  <li><a href="references.html">References</a></li>
+                  <li><a href = "attributions.html">Attributions</a></li>
+                </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </nav>
+</header>
+
+<!--blog body-->
+
+<div id="Blog-post">
+
+  <!-- banner Page
+    ==========================================-->
+
+  <header class="entry-header" style="background-image: url(img/IMG_7625.GIF);">
+    <div class="content  wow fadeInUp">
+      <div class="container">
+        <h1>Survival-based analysis</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <!--blog posts container-->
+      <div class="col-md-10 col-sm-10 col-md-offset-1">
+        <article class="post">
+
+<h2> Survival curves </h2>
+<br>
+
+<p> Kaplan-Meier estimator was initially used to estimate the survival distribution function of males and female flies. The survival probabilities of male flies are found to be higher than in females, meaning males tend to experience longer bouts as the probability of a longer bout 'surviving' in males is higher then females (see Fig. 9). Log rank analysis comparing male and female flies (p < 0.0001) showed significant diffrence in survival probability between the sexes.</p>
+<figure><img width=1000 height=500 src="img/kaplan.png"></img>
+  <br>
+  <br>
+<figcaption style="font-size:16px;"> <strong>Fig.9</strong> - Kaplan-Meier plot associated with sleep bout survival in male and female flies. The plot has been zoomed on the bout durations between 0 and 2000 seconds to allow for easier visualisation. </figcaption>
+<figure>
+<br>
+<br>
+<br>
+<h2> Parametric regression survival model</h2>
+<p> Based on previous result of exploratory distributional analysis, log-normal distribution was selected for parametric regression survival analysis. Within the created model, the effects of variables in the data, such as ID, time of day and sex, are investigated.
+
+  <figure>
+                    <table>
+
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+
+                  <th scope="col">AIC</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Model">Null - no covariates accounted for</td>
+
+                  <td data-label="AIC" >2416053</td>
+
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Model">duration ~ t_h</td>
+
+                  <td data-label="AIC">2412299</td>
+
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Model">duration ~ sex</td>
+
+                  <td data-label="AIC">2409845</td>
+
+                </tr>
+                <tr>
+                  <td scope="row" data-label="Model">duration ~ id * sex</td>
+
+                  <td data-label="AIC">2405476</td>
+
+                </tr>
+
+                <tr>
+                  <td scope="row" data-label="Model">duration ~ t_h * sex</td>
+
+                  <td data-label="AIC">2405252</td>
+
+                </tr>
+
+                <tr>
+                  <td scope="row" data-label="Model">duration ~ id</td>
+
+                  <td data-label="AIC">2404952</td>
+
+                </tr>
+
+                <tr>
+                  <td scope="row" data-label="Model">duration ~ sex * id * t_h</td>
+
+                  <td data-label="AIC">2399040</td>
+
+                </tr>
+                <tr>
+                  <td style="color:blue;" scope="row" data-label="Model">duration ~ id * t_h</td>
+
+                  <td style="color:blue;" data-label="AIC">2398440</td>
+
+                </tr>
+
+
+              </tbody>
+            </table>
+            <br>
+            <br>
+
+          <figcaption style="font-size:16px;"> <strong>Table 4.  </strong> List of lognormal regression models with varying covariates in the order of decending AIC values. The model highlighted in blue is deemed to be the model with the best predictive power.</figcaption>
+
+          </figure>
+          <br>
+
+<p>This demonstrates that the model with hour of day and ID as covariates presents as a model with the lowest AIC and the best predictive power. Inter-subject variability can account for ID improving the fit of the model. Sex alone as a variable improves the null model, however its interaction with hour of day and ID does not further improve the fit. This is due to the fact that once ID is known, so is the sex of the fly, and in this instance sex becomes a redundant variable.
+Further visual analysis was perfomed using a model with the best predictive discriminatory variable - sex.
+</p>
+
+<p> The fit of the lognormal regression model was evaluated on a survival plot. For female sleep bouts, lognormal model predominantly overestimates the survival probabilities of bouts. However, for male flies the model heavily underestimates the survival probabilities of the bouts. The fit of the lognormal model in both sexes appears to best for very short bouts (see Fig. 10).
+</p>
+<br>
+
+<br>
+
+<figure>
+<img src="img/regression_model.png" width=900 height=500>
+<figcaption style="font-size:16px;"><strong>Fig. 10 </strong> - Fit of the lognormal regression survival model on survival data in male and female flies. The survival data is visually represented as a step function characteristic of survival curves and the model for the data is represented by a smooth surve of a matching color. The plot has been zoomed in on the bout durations between 0 and 2000 seconds for more accessible visualisation.</figcaption>
+
+</figure>
+
+
+<br>
+<br>
+
+<a style= "float: right;
+    position: relative;
+    right: 35%"; href="discussion.html" class="btn btn-secondry btn-info" >Next - Discussion</a>
+<!-- <p> Kaplan-Meier survival curves were fitted with nonlinear regression curves and goodness of fit was assessed using AIC.
+  Figure shows survival curves for male and female flies pooled over 24h. Data are shown on semi-log and log-log coordinates. </p>  -->
+<!-- <img src="img/img" width=850 height=450></img>
+  <p>  </p>    -->
+
+
+
+<!--
+      <embed src="sd_se_females.html" width="1200" height="550">
+<embed src="female_sdlog.html" width="1200" height="550">
+
+  <h2> Males </h2>
+  <embed src="sd_males.html" width="1200" height="550">
+        </article>
+		<br>
+        <div class="clearfix"></div>
+      </div>
+      <!--blog posts container-->
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!-- Footer
+    ==========================================-->
+
+    <footer class="bottom-footer">
+      <div class="container">
+        <div class="row">
+
+          <!--site details-->
+          <div class="col-md-3 col-sm-12 col-xs-12 site-identity">
+
+            <ul class="socio">
+
+              <li><a href="https://github.com/evagradovich/data_analysis_project2"><i class="fa fa-github"></i></a></li>
+
+            </ul>
+          </div>
+          <!--/site details-->
+
+
+
+
+
+
+          <!--/contact details-->
+          <div class="col-md-12"><p class="copyright"> EVA GRADOVICH 2018 | CID:00929853 | IMPERIAL COLLEGE LONDON</p></div>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Custom Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+<script>
+new WOW().init();
+</script>
+</body>
+</html>
